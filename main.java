@@ -4,9 +4,9 @@ import java.awt.event.*;
 import java.util.*;
 import java.io.*;
 
-class feesReceipt{
-
-    static JFrame addnewframe = new JFrame();
+class FeeReceipt
+{
+	static JFrame addnewframe = new JFrame();
 	static JTextField amounttext = new JTextField();
 	static JTextField snametext = new JTextField();
 	static JTextField sclasstext = new JTextField();
@@ -22,10 +22,10 @@ class feesReceipt{
 	static JButton generatereceipt = new JButton("GENERATE RECEIPT");
 	static JButton printreceipt = new JButton("PRINT RECEIPT");
 	static int num =0;
-
-    
-    public static void main(String args[]){
-        JPanel header = new JPanel();
+	
+	public static void main(String[] args)
+	{
+		JPanel header = new JPanel();
 		JLabel headerlabel = new JLabel("FEES RECEIPT SYSTEM");
 		JPanel sname = new JPanel();
 		JLabel snamelabel = new JLabel("STUDENT NAME : ");
@@ -63,8 +63,9 @@ class feesReceipt{
 		header.setBounds(300,0,750,100);
 		header.add(headerlabel);
 		headerlabel.setBounds(75,0,625,150);
+		
 
-        Font f = new Font("Baskerville Old Face",Font.BOLD,50);
+		Font f = new Font("Baskerville Old Face",Font.BOLD,50);
 		headerlabel.setFont(f);
 		Font f2 = new Font("Baskerville Old Face",Font.BOLD,20);
 		snamelabel.setFont(f2);
@@ -80,8 +81,9 @@ class feesReceipt{
 		generatereceipt.setFont(f2);
 		reset.setFont(f2);
 		printreceipt.setFont(f2);
-
-        Font f3 = new Font("Baskerville Old Face",Font.BOLD,15);
+		
+		
+		Font f3 = new Font("Baskerville Old Face",Font.BOLD,15);
 		snametext.setFont(f3);
 		sclasstext.setFont(f3);
 		fnametext.setFont(f3);
@@ -93,8 +95,8 @@ class feesReceipt{
 		dojtext.setFont(f3);
 		amounttext.setFont(f3);
 		receiptarea.setFont(f3);
-
-        cntr.add(sname);
+		
+		cntr.add(sname);
 		sname.setLayout(null);
 		sname.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		sname.setBounds(25,200-75,500,50);
@@ -165,8 +167,8 @@ class feesReceipt{
 		smobilelabel.setBounds(10,0,185,50);
 		smobile.add(smobiletext);
 		smobiletext.setBounds(185+25,15,270,20);
-
-        cntr.add(doj);
+		
+		cntr.add(doj);
 		doj.setLayout(null);
 		doj.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		doj.setBounds(25,400-75,500,50);
@@ -198,8 +200,8 @@ class feesReceipt{
 		printreceipt.setBounds(800,640,300,40);
 		
 		receiptarea.setEditable(false);
-        
-        reset.addActionListener(new ActionListener()
+		
+		reset.addActionListener(new ActionListener()
 		{
 				public void actionPerformed(ActionEvent event)
 				{
@@ -222,10 +224,9 @@ class feesReceipt{
 					printreceipt_action(event);
 				}
 		});
-
 	}
-
-    public static void reset_action(ActionEvent event)
+	
+	public static void reset_action(ActionEvent event)
 	{
 		amounttext.setText("");
 		snametext.setText("");
@@ -239,8 +240,8 @@ class feesReceipt{
 		dojtext.setText(""); 
 		receiptarea.setText(""); 
 	}
-
-    public static void generatereceipt_action(ActionEvent event)
+	
+	public static void generatereceipt_action(ActionEvent event)
 	{
 		
 		
@@ -311,5 +312,4 @@ class feesReceipt{
 			System.out.println(e);
 		}
 	}
-
-}
+}	
