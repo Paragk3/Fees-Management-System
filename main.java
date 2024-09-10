@@ -165,6 +165,39 @@ class feesReceipt{
 		smobilelabel.setBounds(10,0,185,50);
 		smobile.add(smobiletext);
 		smobiletext.setBounds(185+25,15,270,20);
+
+        cntr.add(doj);
+		doj.setLayout(null);
+		doj.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		doj.setBounds(25,400-75,500,50);
+		doj.add(dojlabel);
+		dojlabel.setBounds(10,0,215,50);
+		doj.add(dojtext);
+		dojtext.setBounds(215,15,270,20);
+		
+		cntr.add(amount);
+		amount.setLayout(null);
+		amount.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		amount.setBounds(25,575,485+15,50);
+		amount.add(amountlabel);
+		amountlabel.setBounds(10,0,200,50);
+		amount.add(amounttext);
+		amounttext.setBounds(185+25,15,270,20);
+		
+		cntr.add(receiptarea);
+		receiptarea.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		receiptarea.setBounds(550,125,800,500);
+		
+		cntr.add(generatereceipt);
+		generatereceipt.setBounds(100,640,300,40);
+		
+		cntr.add(reset);
+		reset.setBounds(450,640,300,40);
+		
+		cntr.add(printreceipt);
+		printreceipt.setBounds(800,640,300,40);
+		
+		receiptarea.setEditable(false);
         
 
 
