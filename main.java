@@ -93,6 +93,78 @@ class feesReceipt{
 		dojtext.setFont(f3);
 		amounttext.setFont(f3);
 		receiptarea.setFont(f3);
+
+        cntr.add(sname);
+		sname.setLayout(null);
+		sname.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		sname.setBounds(25,200-75,500,50);
+		sname.add(snamelabel);
+		snamelabel.setBounds(10,0,200,50);
+		sname.add(snametext);
+		snametext.setBounds(215,15,270,20);
+		
+		cntr.add(sclass);
+		sclass.setLayout(null);
+		sclass.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		sclass.setBounds(25,375,485+15,50);
+		sclass.add(sclasslabel);
+		sclasslabel.setBounds(10,0,175,50);
+		sclass.add(sclasstext);
+		sclasstext.setBounds(185+25,15,270,20);
+		
+		cntr.add(fname);
+		fname.setLayout(null);
+		fname.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		fname.setBounds(25,250-75,500,50);
+		fname.add(fnamelabel);
+		fnamelabel.setBounds(10,0,175,50);
+		fname.add(fnametext);
+		fnametext.setBounds(215,15,270,20);
+		
+		cntr.add(fmobile);
+		fmobile.setLayout(null);
+		fmobile.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		fmobile.setBounds(25,425,485+15,50);
+		fmobile.add(fmobilelabel);
+		fmobilelabel.setBounds(10,0,175,50);
+		fmobile.add(fmobiletext);
+		fmobiletext.setBounds(185+25,15,270,20);
+		
+		cntr.add(mname);
+		mname.setLayout(null);
+		mname.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		mname.setBounds(25,300-75,500,50);
+		mname.add(mnamelabel);
+		mnamelabel.setBounds(10,0,185,50);
+		mname.add(mnametext);
+		mnametext.setBounds(215,15,270,20);
+		
+		cntr.add(mmobile);
+		mmobile.setLayout(null);
+		mmobile.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		mmobile.setBounds(25,475,485+15,50);
+		mmobile.add(mmobilelabel);
+		mmobilelabel.setBounds(10,0,175,50);
+		mmobile.add(mmobiletext);
+		mmobiletext.setBounds(185+25,15,270,20);
+		
+		cntr.add(saddress);
+		saddress.setLayout(null);
+		saddress.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		saddress.setBounds(25,350-75,500,50);
+		saddress.add(saddresslabel);
+		saddresslabel.setBounds(10,0,195,50);
+		saddress.add(saddresstext);
+		saddresstext.setBounds(215,15,270,20);
+		
+		cntr.add(smobile);
+		smobile.setLayout(null);
+		smobile.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+		smobile.setBounds(25,525,485+15,50);
+		smobile.add(smobilelabel);
+		smobilelabel.setBounds(10,0,185,50);
+		smobile.add(smobiletext);
+		smobiletext.setBounds(185+25,15,270,20);
         
 
 
