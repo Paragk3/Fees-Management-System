@@ -240,4 +240,76 @@ class feesReceipt{
 		receiptarea.setText(""); 
 	}
 
+    public static void generatereceipt_action(ActionEvent event)
+	{
+		
+		
+		
+		try
+		{
+			FileInputStream fin = new FileInputStream("receipt number.txt");
+			int i = 0;
+			
+			
+			while((i = fin.read())!= -1)
+			{
+				num=i;
+			}
+			
+			fin.close();
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		
+		Date obj = new Date();
+		
+		String date = obj.toString();
+		
+		receiptarea.setText("\t********************\n");
+		receiptarea.setText(""+receiptarea.getText()+"\t CONCEPT CLASSES\n");
+		receiptarea.setText(""+receiptarea.getText()+"\t********************\n\n"+date+"   Receipt Number : "+(num+1));
+		receiptarea.setText(""+receiptarea.getText()+"\n\n\nSTUDENT NAME : "+snametext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nFATHER NAME : "+fnametext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nMOTHER NAME : "+mnametext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nADDRESS : "+saddresstext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nDATE OF JOINING : "+dojtext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nCLASS : "+sclasstext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nFATHER MOBILE : "+fmobiletext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nMOTHER MOBILE : "+mmobiletext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nSTUDENT MOBILE : "+smobiletext.getText());
+		receiptarea.setText(""+receiptarea.getText()+"\n\nFEE AMOUNT : "+amounttext.getText()+"\t\t    SIGNATURE");
+		
+		
+		
+	}
+	
+	public static void printreceipt_action(ActionEvent event)
+	{
+		try{
+			receiptarea.print();
+		}
+		catch(Exception e)
+		{
+			
+		}
+		
+		try
+		{
+			FileOutputStream fout = new FileOutputStream("receipt number.txt",true);
+		
+			num++;		
+			fout.write(num);
+			fout.close();
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
 }
