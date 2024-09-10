@@ -80,6 +80,19 @@ class feesReceipt{
 		generatereceipt.setFont(f2);
 		reset.setFont(f2);
 		printreceipt.setFont(f2);
+
+        Font f3 = new Font("Baskerville Old Face",Font.BOLD,15);
+		snametext.setFont(f3);
+		sclasstext.setFont(f3);
+		fnametext.setFont(f3);
+		fmobiletext.setFont(f3);
+		mnametext.setFont(f3);
+		mmobiletext.setFont(f3);
+		saddresstext.setFont(f3);
+		smobiletext.setFont(f3);
+		dojtext.setFont(f3);
+		amounttext.setFont(f3);
+		receiptarea.setFont(f3);
         
 
 
