@@ -199,8 +199,31 @@ class feesReceipt{
 		
 		receiptarea.setEditable(false);
         
+        reset.addActionListener(new ActionListener()
+		{
+				public void actionPerformed(ActionEvent event)
+				{
+					reset_action(event);
+				}
+		});
+		
+		generatereceipt.addActionListener(new ActionListener()
+		{
+				public void actionPerformed(ActionEvent event)
+				{
+					generatereceipt_action(event);
+				}
+		});
+		
+		printreceipt.addActionListener(new ActionListener()
+		{
+				public void actionPerformed(ActionEvent event)
+				{
+					printreceipt_action(event);
+				}
+		});
+	}
 
-
-    }
+    
 
 }
