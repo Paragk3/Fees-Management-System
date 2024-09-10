@@ -63,6 +63,23 @@ class feesReceipt{
 		header.setBounds(300,0,750,100);
 		header.add(headerlabel);
 		headerlabel.setBounds(75,0,625,150);
+
+        Font f = new Font("Baskerville Old Face",Font.BOLD,50);
+		headerlabel.setFont(f);
+		Font f2 = new Font("Baskerville Old Face",Font.BOLD,20);
+		snamelabel.setFont(f2);
+		sclasslabel.setFont(f2);
+		fnamelabel.setFont(f2);
+		fmobilelabel.setFont(f2);
+		mnamelabel.setFont(f2);
+		mmobilelabel.setFont(f2);
+		saddresslabel.setFont(f2);
+		smobilelabel.setFont(f2);
+		dojlabel.setFont(f2);
+		amountlabel.setFont(f2);
+		generatereceipt.setFont(f2);
+		reset.setFont(f2);
+		printreceipt.setFont(f2);
         
 
 
