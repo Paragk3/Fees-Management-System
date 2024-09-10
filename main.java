@@ -222,8 +222,22 @@ class feesReceipt{
 					printreceipt_action(event);
 				}
 		});
+
 	}
 
-    
+    public static void reset_action(ActionEvent event)
+	{
+		amounttext.setText("");
+		snametext.setText("");
+		sclasstext.setText("");
+		fnametext.setText(""); 
+		fmobiletext.setText(""); 
+		mnametext.setText(""); 
+		mmobiletext.setText(""); 
+		saddresstext.setText(""); 
+		smobiletext.setText(""); 
+		dojtext.setText(""); 
+		receiptarea.setText(""); 
+	}
 
 }
